@@ -7,7 +7,7 @@ using namespace std;
 
 ofstream mult("Mult.txt");
 
-void mult_mat_1(int m1, int m2, int** mat1, int n1, int n2,
+void mult_mat_c(int m1, int m2, int** mat1, int n1, int n2,
 			int** mat2)
 {
 	int x, i, j;
@@ -30,7 +30,7 @@ void mult_mat_1(int m1, int m2, int** mat1, int n1, int n2,
     mult.close();
 }
 
-void mult_mat_2(int m1, int m2, int** mat1, int n1, int n2,
+void mult_mat_b(int m1, int m2, int** mat1, int n1, int n2,
 			int** mat2, int bSz)
 {
 	int x, i, j;
