@@ -111,30 +111,3 @@ int** mat_gene(ifstream& in,string name, int x, int y){
     in.close();
     return a;
 }
-int main(int argc, char** argv)
-{   
-    string nam1="mat1.txt",nam2="mat2.txt";
-    ifstream Mat1;
-    ifstream Mat2;
-    int m1,m2,n1,n2;
-    inf_mat(Mat1,nam1,m1,m2);
-    inf_mat(Mat2,nam2,n1,n2);
-    //cout<<m1<<m2<<n1<<n2<<endl;
-    int** mat1 = mat_gene(Mat1,nam1,m1,m2);
-    int** mat2 = mat_gene(Mat2,nam2,n1,n2);
-    //cout << mat1[0][1] <<" "<< mat2[1][1];
-
-    //cout << argv[1]<<endl;
-
-    if (argv[1] == string("1")) {
-        cout <<"here\n";
-        mult_mat_1(m1, m2, mat1, n1, n2, mat2);
-        cout <<"here\n";
-    }
-    else if (argv[1] == string("2")) {
-        //cout <<"here\n";
-        mult_mat_2(m1, m2, mat1, n1, n2, mat2,2);
-        //cout <<"here\n";
-    }
-	return 0;
-}
